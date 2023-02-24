@@ -41,6 +41,7 @@ echo "Installing global composer packages..."
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
+$HOME/.composer/vendor/bin/valet trust
 
 # Install node versions
 echo "Installing latest node LTS..."
