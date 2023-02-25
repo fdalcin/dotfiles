@@ -1,3 +1,4 @@
+*/*.lock.json
 /zsh/plugins/*
 /zsh/themes/*
 !*/*/.gitkeep
