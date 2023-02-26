@@ -44,7 +44,7 @@ echo "Installing latest node LTS..."
 
 # Add global gitignore symlink
 echo "Setting global gitignore..."
-ln -sf $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
+ln -sf $DOTFILES/git/gitignore_global $HOME/.gitignore_global
 git config --global core.excludesfile $HOME/.gitignore_global
 
 # Create default code structure
