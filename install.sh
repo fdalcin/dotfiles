@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-
 echo "Setting up your MacOS setup...\n"
 
 # Get the full path to the dotfiles repo
@@ -26,10 +25,6 @@ if test ! $(which brew); then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-# Add symlink to zsh preferences
-echo "Setting zsh preferences..."
-ln -sf $DOTFILES/zsh/zshrc $HOME/.zshrc
-
 echo "Installing dependencies..."
 brew update
 brew tap homebrew/bundle
@@ -38,7 +33,6 @@ brew bundle --file $DOTFILES/homebrew/Brewfile
 # Install global Composer packages
 echo "Installing global composer packages..."
 /usr/local/bin/composer global require laravel/installer laravel/valet laravel-zero/installer
-
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 $HOME/.composer/vendor/bin/valet trust
@@ -77,6 +71,10 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git "${D
 
 rm -rf "$DOTFILES/zsh/plugins/zsh-autosuggestions"
 git clone https://github.com/zsh-users/zsh-autosuggestions "${DOTFILES}/zsh/plugins/zsh-autosuggestions"
+
+# Add symlink to zsh preferences
+echo "Setting zsh preferences..."
+ln -sf $DOTFILES/zsh/zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
 echo "Setting MacOS preferences..."
