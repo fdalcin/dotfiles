@@ -53,7 +53,6 @@ CODE=$HOME/Code
 PB=$CODE/pressbooks
 mkdir $CODE
 mkdir $PB
-mkdir $HOME/fdalcin
 
 # Clone basic repositories
 echo "Cloning repositories..."
