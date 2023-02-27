@@ -29,6 +29,7 @@ echo "Installing dependencies..."
 brew update
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/homebrew/Brewfile
+brew cleanup
 
 # Install global Composer packages
 echo "Installing global composer packages..."
