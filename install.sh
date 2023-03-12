@@ -33,7 +33,7 @@ brew cleanup
 
 # Install global Composer packages
 echo "Installing global composer packages..."
-/usr/local/bin/composer global require laravel/installer laravel/valet laravel-zero/installer
+/usr/local/bin/composer global require laravel/installer laravel/valet laravel-zero/installer beyondcode/expose
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 $HOME/.composer/vendor/bin/valet trust
