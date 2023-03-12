@@ -21,6 +21,7 @@ brew 'php@8.1'
 brew 'composer'
 brew 'fnm'
 brew 'nginx'
+brew 'stripe/stripe-cli/stripe'
 
 # Apps
 cask '1password'
