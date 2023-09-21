@@ -1,5 +1,4 @@
 # Taps
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -16,11 +15,7 @@ brew 'mackup'
 brew 'svn' # Needed to install fonts
 
 # Development
-brew 'php'
-brew 'php@8.1'
-brew 'composer'
 brew 'fnm'
-brew 'nginx'
 brew 'stripe/stripe-cli/stripe'
 
 # Apps
@@ -31,6 +26,7 @@ cask 'expressvpn'
 cask 'firefox'
 cask 'github'
 cask 'google-chrome'
+cask 'herd'
 cask 'insomnia'
 cask 'iterm2'
 cask 'lando'
