@@ -20,7 +20,7 @@ brew 'stripe/stripe-cli/stripe'
 
 # Apps
 cask '1password'
-cask 'discord'
+cask 'dbngin'
 cask 'docker'
 cask 'expressvpn'
 cask 'firefox'
