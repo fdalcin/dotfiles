@@ -39,6 +39,8 @@ cask 'visual-studio-code'
 cask 'zoom'
 
 # Fonts
+cask 'font-fira-code'
+cask 'font-jetbrains-mono'
 cask 'font-lato'
 cask 'font-open-sans'
 cask 'font-roboto'
