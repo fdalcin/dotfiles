@@ -15,19 +15,16 @@ brew 'mackup'
 brew 'svn' # Needed to install fonts
 
 # Development
-brew 'fnm'
 brew 'stripe/stripe-cli/stripe'
 
 # Apps
 cask '1password'
-cask 'dbngin'
 cask 'docker'
 cask 'expressvpn'
 cask 'firefox'
 cask 'github'
 cask 'google-chrome'
 cask 'herd'
-cask 'insomnia'
 cask 'iterm2'
 cask 'lando'
 cask 'phpstorm'
@@ -48,3 +45,4 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask 'font-hack-nerd-font'

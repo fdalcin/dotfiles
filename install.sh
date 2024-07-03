@@ -31,11 +31,6 @@ brew tap homebrew/bundle
 brew bundle --file $DOTFILES/homebrew/Brewfile
 brew cleanup
 
-# Install node versions
-echo "Installing latest node LTS..."
-/usr/local/bin/fnm install --lts
-/usr/local/bin/fnm default lts-latest
-
 # Add global gitignore symlink
 echo "Setting global gitignore..."
 ln -sf $DOTFILES/git/gitignore_global $HOME/.gitignore_global
@@ -45,14 +40,17 @@ git config --global core.excludesfile $HOME/.gitignore_global
 echo "Creating default code structure..."
 CODE=$HOME/Code
 PB=$CODE/pressbooks
+SITES=$CODE/sites
 mkdir $CODE
 mkdir $PB
+mkdir $SITES
 
 # Clone basic repositories
 echo "Cloning repositories..."
 git clone git@github.com:pressbooks/bi-data-manager.git "$PB/bi-data-manager"
 git clone git@github.com:pressbooks/pressbooks-book-directory-fe.git "$PB/pressbooks-directory"
 git clone git@github.com:pressbooks/setup-development-environment.git "$PB/pressbooks-network"
+git clone git@github.com:fdalcin/the-ink-crown.git "$SITES/the-ink-crown"
 
 echo "Configuring terminal..."
 rm -rf "$DOTFILES/zsh/themes/spaceship-prompt"
