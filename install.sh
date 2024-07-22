@@ -21,8 +21,8 @@ fi
 if test ! $(which brew); then
     echo "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> $HOME/.zprofile
-    eval "$(/usr/local/bin/brew shellenv)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 echo "Installing dependencies..."
