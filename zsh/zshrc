@@ -37,9 +37,6 @@ plugins=(
   zsh-autosuggestions
 )
 
-# Set up ZSH to use fnm
-eval "$(fnm env --use-on-cd)"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
