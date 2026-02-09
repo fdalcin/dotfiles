@@ -1,5 +1,4 @@
 # Taps
-tap 'homebrew/bundle'
 tap 'stripe/stripe-cli'
 
 # Binaries
@@ -10,6 +9,7 @@ brew 'gh'
 brew 'git'
 brew 'grep'
 brew 'mackup'
+brew 'ngrok'
 brew 'svn' # Needed to install fonts
 
 # Development
@@ -17,8 +17,8 @@ brew 'stripe/stripe-cli/stripe'
 
 # Apps
 cask '1password'
-cask 'docker'
-cask 'expressvpn'
+cask 'docker-desktop'
+cask 'dbngin'
 cask 'firefox'
 cask 'github'
 cask 'google-chrome'

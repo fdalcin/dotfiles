@@ -11,6 +11,14 @@ if [ ! -f "$HOME/.hushlogin" ]; then
     touch $HOME/.hushlogin
 fi 
 
+# Check if Xcode Command Line Tools are installed
+if ! xcode-select -p &>/dev/null; then
+  echo "Xcode Command Line Tools not found. Installing..."
+  xcode-select --install
+else
+  echo "Xcode Command Line Tools already installed."
+fi
+
 # Install Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "Installing Oh My Zsh..."
