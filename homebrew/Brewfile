@@ -1,5 +1,6 @@
 # Taps
 tap 'anomalyco/tap'
+tap 'muxy-app/tap'
 tap 'stripe/stripe-cli'
 
 # Binaries
@@ -19,11 +20,11 @@ brew 'stripe/stripe-cli/stripe'
 cask '1password'
 cask 'dbngin'
 cask 'firefox'
-cask 'ghostty'
 cask 'github'
 cask 'google-chrome'
 cask 'herd'
 cask 'iterm2'
+cask 'muxy'
 cask 'ngrok'
 cask 'orbstack'
 cask 'phpstorm'
